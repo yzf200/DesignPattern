@@ -1,6 +1,8 @@
 package com.fei.designpattern.creation.singleton.enumsingleton;
 
-public enum EnumSingleton {
+import java.io.Serializable;
+
+public enum EnumSingleton implements Serializable {
     EnumSingleton("枚举单例");
 
     private String name;

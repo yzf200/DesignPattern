@@ -1,6 +1,8 @@
 package com.fei.designpattern.creation.singleton.lazy;
 
-public  class LazySingleton {
+import java.io.Serializable;
+
+public  class LazySingleton implements Serializable {
     private static LazySingleton lazySingleton = null;
 
     private  LazySingleton() {
@@ -12,4 +14,6 @@ public  class LazySingleton {
         }
         return lazySingleton;
     }
+
+
 }
